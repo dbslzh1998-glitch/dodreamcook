@@ -8,15 +8,60 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./두드림cook/css/style.css">
 </head>
-<body>
+<body div data-bs-spy="scroll" data-bs-target="#navbarSupportedContent"></body>
+    <!-- 네비게이션 시작 -->
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
+    <div class="container">
+    <a class="navbar-brand gugi-font" href="#home">
+    <img src="./두드림cook/css/images/logo.png" alt="logo">
+    두드림 Cook
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto my-2">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">홈</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#about-chef">쉐프 소개</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#portfolio">포트폴리오</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#service">서비스</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#blog">블로그</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#contact">연락처</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+    <!-- 네비게이션 끝 -->
     <!-- 헤더 영역 시작 -->
-     <header class="vh-100 flex text-white d-flex flex-column justify-content-center align-items-center" id="home1">
+     <header class="d-flex flex-column justify-content-center align-items-center vh-100 text-white" id="home">
         <div class="container text-center">
   <div class="column align-items-start">
         <h1 class="display-3 fw-bold mb-5">두드림 ART Cook</h1>
         <h4 class="fs-2 mb-5">요리와 아트의 만남</h4>
         <p class="lead mb-5">아름다운 한 끼로 삶의 색체를 더하다</p>
-        <button type="button" class="btn btn-outline-warning rounded-pill">대표 요리 보기</button>
+        <button type="button" class="btn btn-outline-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal"> ART Cook 대표 요리</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                              <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">ART Cook 대표 요리</h1>
+                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>  
+                               </div>  
+                        <div class="modal-body">
+                        <img src="./두드림cook/css/images/bestmenu.jpg" alt="대표요리" class="img-fluid">
+                        <p class="text-muted">Iste recusandae facere nam optio dolore nesciunt ad nobis delectus id ea suscipit, incidunt, fugit est. Numquam provident aliquid doloremque magnam perferendis, ex modi deleniti, aliquam eos fugit delectus recusandae, aspernatur illo consequatur maiores? Voluptate laborum ipsa eligendi unde aspernatur. Ratione maxime, vitae alias iste dolorum debitis tempore reiciendis perferendis dolor animi dignissimos eveniet doloribus modi repudiandae fugit dolores dolorem, asperiores consectetur recusandae? Amet mollitia facere temporibus et, tempore aliquam quas porro voluptatum consequuntur optio repudiandae dolore distinctio! Omnis maxime, deserunt tempore officiis deleniti quidem ex dolorum nobis necessitatibus dolorem molestias pariatur iusto facilis soluta veniam expedita eaque amet quam nemo? Distinctio dignissimos eos dolor veniam dolore impedit praesentium. Nihil magni deleniti quia asperiores! Aspernatur cumque sed esse autem? Est dolore eius repellat quis voluptatibus. Corrupti aliquam quod blanditiis eligendi delectus harum obcaecati distinctio non quo nesciunt fugit rerum mollitia doloribus pariatur iusto, tempore, laboriosam inventore optio officia. Veniam asperiores dolor aperiam commodi, quis nulla exercitationem deleniti debitis libero enim cumque.
+                        </p>
+                        <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nostrum sint ratione assumenda cumque ipsam, dolor, inventore et neque fuga obcaecati? Magnam impedit inventore eaque, explicabo illum magni iste natus quis, iure vel, quo quidem enim officia tempora deserunt est numquam maxime accusantium quod? Officiis quos culpa porro suscipit, quaerat quasi itaque aliquid! Itaque accusamus, earum perferendis laudantium veniam soluta beatae nam fugiat quasi minus in quisquam, error dolorum eaque non? Corporis aut nulla at amet saepe deserunt! Soluta non quisquam sunt sint saepe nihil omnis at alias debitis distinctio voluptates quibusdam consectetur maiores voluptate tempore, provident facilis officiis aperiam iusto libero nobis. Velit quas cum eligendi, officiis harum itaque voluptatum temporibus architecto nesciunt dolorem, blanditiis in quod! Enim voluptates, repudiandae accusamus, delectus impedit ea animi quaerat odio nostrum nemo, iste odit mollitia aspernatur quae recusandae illo libero eos asperiores quo itaque? Fugiat suscipit laudantium sint ut vel fuga neque!</p>
+                    </div>
+                    </div>
+            </div> 
   </div>
      </header>
      <!-- 헤더 영역 끝 -->
@@ -120,11 +165,11 @@
                      <div class="card-hover shadow rounded p-4">
                     <div class="d-flex justify-content-end align-items-center py-3">
                         <div class="text-end me-3">
-                            <h3 class="fw-bold">디저트 클래스</h3>
+                            <h3 class="fw-bold">디저트 아트</h3>
                             <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                             </div>
                               <img src="./두드림cook/css/images/service2.jpg" alt="서비스 1" class="rounded-circle">
-                            </div>
+                              </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo unde inventore delectus beatae explicabo molestiae ducimus libero asperiores adipisci quo neque a quas doloremque dolorum est, odio necessitatibus excepturi dicta!
                     </p>
                     </div>
@@ -134,7 +179,7 @@
                     <div class="d-flex align-items-center py-3">
                         <img src="./두드림cook/css/images/service3.jpg" alt="서비스 1" class="rounded-circle">
                         <div class="ms-3">
-                            <h3 class="fw-bold">아트 클래스</h3>
+                            <h3 class="fw-bold">아트쿡 클래스</h3>
                             <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                         </div>
                         </div>
@@ -175,7 +220,7 @@
         </section>
       <!-- SNS 섹션 끝 -->
        <!-- 블로그 섹션 시작 -->
-        <section class="container overflow-hidden py-5 id="blog">
+        <section class="container overflow-hidden py-5" id="blog">
         <div class="text-center py-5">
             <h2 class="fw-bold">art cook 블로그</h2>
             <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, accusamus.</p>
@@ -235,12 +280,12 @@
             <div class="col-lg-3">
                 <!-- button trigger modal -->
                  <button type="button" class="btn btn-primary"
-                 data-bs-toggle="modal" data-bs-target="#exampleModal">뉴스보기</button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 data-bs-toggle="modal" data-bs-target="#newsModal">뉴스보기</button>
+            <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                              <h1 class="modal-title fs-5" id="newsModalLabel">Modal title</h1>
                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -262,14 +307,14 @@
             <div class="row gy-3 py-5">
             <div class="col-md">
             <div class="shadow p-4 border-bottom border-4 border-warning">
-            <i class="bi bi-envelope-heart fs-5 text-suceess"></i>
+            <i class="bi bi-envelope-heart fs-5 text-warning"></i>
             <h3 class="fw-bold fs-5 py-2">이메일</h3>
             <hr>
             <p class="text-secondary">codethem@naver.com</p>
             </div>
             </div>
             <div class="col-md">
-            <div class="shadow p-4 border-bottom border-4 border-warning">
+            <div class="shadow p-4 border-bottom border-4 border-success">
                 <i class="bi bi-telephone-fill fs-5 text-success"></i>
             <h3 class="fw-bold fs-5 py-2">전화번호</h3>
             <hr>
